@@ -10,11 +10,15 @@
     "safari": "npm run testcafe safari tests/",
     "firefox": "npm run testcafe firefox tests/",
     "browsers": "npm run testcafe -- -b browserstack",
-    "ie": "npm run testcafe 'browserstack:ie@11.0:Windows 10' tests/"
+    "ie": "npm run testcafe 'browserstack:ie@11.0:Windows 10' tests/",
+    "prettier": "./node_modules/.bin/prettier --write '**/*.js'"
   },
   "author": "Jones Sagabaen",
   "license": "MIT",
   "dependencies": {
     "testcafe": "^1.8.8"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
