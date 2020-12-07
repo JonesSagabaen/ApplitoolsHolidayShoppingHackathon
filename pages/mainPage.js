@@ -1,10 +1,13 @@
 import { Selector, t } from "testcafe";
 import sidebarFilterComponent from "./sidebarFilterComponent";
+import productGridComponent from "./productGridComponent";
 
 const mainPage = {
   logo: Selector("#logo"),
 
   sidebarFilterComponent,
+
+  productGridComponent,
 
   async pageLoaded() {
     return await this.logo.exists;
@@ -16,6 +19,10 @@ const mainPage = {
 
   async clickFilterButton() {
     await t.click(this.sidebarFilterComponent.filterButton);
+  },
+
+  async clickProduct(productName) {
+    await this.productGridComponent.clickProduct(productName);
   },
 };
 

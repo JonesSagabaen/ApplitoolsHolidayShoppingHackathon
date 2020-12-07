@@ -1,4 +1,5 @@
 import mainPage from "../pages/mainPage";
+import productDetailsPage from "../pages/productDetailsPage";
 
 fixture`part1`.page("https://demo.applitools.com/tlcHackathonMasterV1.html");
 
@@ -15,14 +16,16 @@ test("Filtered Product Grid", async (t) => {
   await mainPage.clickColorCheckbox("Black");
   await mainPage.clickFilterButton();
 
-  await t.debug();
-
   // TODO: Take a screenshot
 });
 
-test.skip("Product Details", async (t) => {
-  await t.debug();
+test("Product Details", async (t) => {
+  let targetProduct = "Appli Air x Night";
+  await mainPage.pageLoaded();
+  await mainPage.clickProduct(targetProduct);
 
-  // TODO: Without filtering, click Appli Air x Night image
+  await productDetailsPage.pageLoaded();
+  await t.expect(await productDetailsPage.getProductTitle()).eql(targetProduct);
+
   // TODO: Take a screenshot
 });
