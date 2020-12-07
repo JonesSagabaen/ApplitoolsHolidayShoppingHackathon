@@ -3,18 +3,20 @@ import mainPage from "../pages/mainPage";
 fixture`part1`.page("https://demo.applitools.com/tlcHackathonMasterV1.html");
 
 test("Main Page", async (t) => {
-  await mainPage.pageLoaded().ok();
-  //await t.debug();
+  await mainPage.pageLoaded();
   await t.expect(mainPage.logo.exists).ok();
 
   // TODO: Take a screenshot
 });
 
-test.skip("Filtered Product Grid", async (t) => {
+test("Filtered Product Grid", async (t) => {
+  await mainPage.pageLoaded();
+  await t.expect(mainPage.logo.exists).ok();
+  await mainPage.clickColorCheckbox("Black");
+  await mainPage.clickFilterButton();
+
   await t.debug();
 
-  // TODO: On left panel component, check Black under colors filter
-  // TODO: Click Filter button
   // TODO: Take a screenshot
 });
 

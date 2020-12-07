@@ -3,14 +3,9 @@
   "version": "1.0.0",
   "description": "Hackathon hosted by Applitools.",
   "scripts": {
+    "test": "npm run testcafe chrome --window-size=1200,800 tests/",
+    "testWinDimensions": "npm run testcafe \"chrome '--window-size=1200,800'\" tests/",
     "testcafe": "./node_modules/.bin/testcafe",
-    "test": "npm run testcafe chrome tests/",
-    "all": "npm run testcafe -- -c 2 chrome:headless,firefox:headless tests/",
-    "cli": "npm run testcafe -- -c 2 chrome:headless tests/",
-    "safari": "npm run testcafe safari tests/",
-    "firefox": "npm run testcafe firefox tests/",
-    "browsers": "npm run testcafe -- -b browserstack",
-    "ie": "npm run testcafe 'browserstack:ie@11.0:Windows 10' tests/",
     "prettier": "./node_modules/.bin/prettier --write '**/*.js'"
   },
   "author": "Jones Sagabaen",
