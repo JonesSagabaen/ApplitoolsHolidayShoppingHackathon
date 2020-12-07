@@ -12,9 +12,12 @@ test("Main Page", async (t) => {
 
 test("Filtered Product Grid", async (t) => {
   await mainPage.pageLoaded();
-  await t.expect(mainPage.logo.exists).ok();
+  let countBeforeFiltering = await mainPage.getProductGridCount();
+
   await mainPage.clickColorCheckbox("Black");
   await mainPage.clickFilterButton();
+  let countAfterFiltering = await mainPage.getProductGridCount();
+  await t.expect(countBeforeFiltering).gt(countAfterFiltering);
 
   // TODO: Take a screenshot
 });

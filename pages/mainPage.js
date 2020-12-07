@@ -21,6 +21,10 @@ const mainPage = {
     await t.click(this.sidebarFilterComponent.filterButton);
   },
 
+  async getProductGridCount() {
+    return await this.productGridComponent.getProductGridCount();
+  },
+
   async clickProduct(productName) {
     await this.productGridComponent.clickProduct(productName);
   },

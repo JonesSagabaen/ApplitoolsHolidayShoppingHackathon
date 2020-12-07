@@ -10,7 +10,10 @@ const productGridComponent = {
       .withText(productName);
     await t.click(targetProduct);
   },
+
+  async getProductGridCount() {
+    return await this.productGrid.find("div").count;
+  },
 };
 
 export default { ...mainPage, ...productGridComponent };
-
