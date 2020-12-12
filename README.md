@@ -15,11 +15,11 @@ Use the following command to run all tests:
 Upon running Applitools integrated tests, results are available to the user in their Dashboard.  Here are Dashboard results 
 requested by the Hackathon instructions:
 
-[Part 1 Test results](https://eyes.applitools.com/app/test-results/00000251794498809037?accountId=OG8oG7fjPU2EfpTNhI38oA~~&display=details&top=00000251794498809037%281%29)
+* [Part 1 Test results](https://eyes.applitools.com/app/test-results/00000251794498809037?accountId=OG8oG7fjPU2EfpTNhI38oA~~&display=details&top=00000251794498809037%281%29)
 
-[Part 2 Test results](https://eyes.applitools.com/app/test-results/00000251794495650359/00000251794495636163/steps/1/edit?accountId=OG8oG7fjPU2EfpTNhI38oA~~&diff=eyJub2RlMSI6eyJ0b3AiOjY5MywibGVmdCI6MTUsIndpZHRoIjo1NzAsImhlaWdodCI6MTA1fSwibm9kZTFoYXNoIjotMTk0NjAxNDQ5Mywibm9kZTIiOnsidG9wIjo3NTYsImxlZnQiOjE1LCJ3aWR0aCI6NTAsImhlaWdodCI6MTAwOH0sIm5vZGUyaGFzaCI6LTE5NDYwMTQ0OTN9&mode=step-editor)
+* [Part 2 Test results](https://eyes.applitools.com/app/test-results/00000251794495650359/00000251794495636163/steps/1/edit?accountId=OG8oG7fjPU2EfpTNhI38oA~~&diff=eyJub2RlMSI6eyJ0b3AiOjY5MywibGVmdCI6MTUsIndpZHRoIjo1NzAsImhlaWdodCI6MTA1fSwibm9kZTFoYXNoIjotMTk0NjAxNDQ5Mywibm9kZTIiOnsidG9wIjo3NTYsImxlZnQiOjE1LCJ3aWR0aCI6NTAsImhlaWdodCI6MTAwOH0sIm5vZGUyaGFzaCI6LTE5NDYwMTQ0OTN9&mode=step-editor)
 
-[Part 3 Test results](https://eyes.applitools.com/app/test-results/00000251794493537078?accountId=OG8oG7fjPU2EfpTNhI38oA~~&display=details&top=00000251794492625817%284%29)
+* [Part 3 Test results](https://eyes.applitools.com/app/test-results/00000251794493537078?accountId=OG8oG7fjPU2EfpTNhI38oA~~&display=details&top=00000251794492625817%284%29)
 
 ### Errors
 
