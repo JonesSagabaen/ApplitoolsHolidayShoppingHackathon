@@ -1,21 +1,14 @@
 import Eyes from "@applitools/eyes-testcafe";
 import mainPage from "../pages/mainPage";
 import productDetailsPage from "../pages/productDetailsPage";
-import productGridComponent from "../pages/productGridComponent";
 
 const eyes = new Eyes();
 
-fixture`part1`
+fixture`HolidayShopping`
   .page("https://demo.applitools.com/tlcHackathonMasterV1.html")
-
-  // Call Close on eyes to let the server know it should display the results
   .afterEach(async () => eyes.close())
   .after(async () => {
-    // Wait and collect all test results
-    // we pass false to this method to suppress the exception that is thrown if we
-    // find visual differences
     let allTestResults = await eyes.waitForResults(false);
-    // Print results
     console.log(allTestResults);
   });
 
@@ -54,7 +47,7 @@ test("Filtered Product Grid", async (t) => {
   await eyes.checkWindow({
     tag: "product details",
     target: "region",
-    selector: productGridComponent.productGrid,
+    selector: mainPage.productGridComponent.productGrid,
     fully: true,
   });
 });

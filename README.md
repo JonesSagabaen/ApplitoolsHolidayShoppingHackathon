@@ -12,5 +12,7 @@ Use the following command to run all tests:
 
 ## Applitools Eyes
 
-Part 1 test result batch
-https://eyes.applitools.com/app/test-results/00000251794504148202/
+Applitools Dashboard that displays the results of the test batch.
+[Part 1 Test results](https://eyes.applitools.com/app/test-results/00000251794498809037?accountId=OG8oG7fjPU2EfpTNhI38oA~~&display=details&top=00000251794498809037%281%29)
+[Part 2 Test results]()
+[Part 3 Test results]()
