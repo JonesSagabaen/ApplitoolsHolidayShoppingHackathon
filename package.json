@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jones Sagabaen submission for Applitools Hackathon 2020.",
   "scripts": {
-    "test": "npm run testcafe chrome tests/",
+    "test": "npm run testcafe chrome:headless tests/",
     "testForceDimensions": "npm run testcafe \"chrome '--window-size=1200,800'\" tests/",
     "testcafe": "./node_modules/.bin/testcafe",
     "prettier": "./node_modules/.bin/prettier --write '**/*.js'"
