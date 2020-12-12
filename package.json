@@ -1,19 +1,23 @@
 {
   "name": "applitoolsholidayshoppinghackathon",
   "version": "1.0.0",
-  "description": "Hackathon hosted by Applitools.",
+  "description": "Jones Sagabaen submission for Applitools Hackathon 2020.",
   "scripts": {
-    "test": "npm run testcafe chrome --window-size=1200,800 tests/",
-    "testWinDimensions": "npm run testcafe \"chrome '--window-size=1200,800'\" tests/",
+    "test": "npm run testcafe chrome tests/",
+    "testForceDimensions": "npm run testcafe \"chrome '--window-size=1200,800'\" tests/",
     "testcafe": "./node_modules/.bin/testcafe",
     "prettier": "./node_modules/.bin/prettier --write '**/*.js'"
   },
   "author": "Jones Sagabaen",
   "license": "MIT",
   "dependencies": {
+    "@applitools/eyes-testcafe": "^1.11.1",
     "testcafe": "^1.8.8"
   },
   "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
     "prettier": "^2.2.1"
   }
 }

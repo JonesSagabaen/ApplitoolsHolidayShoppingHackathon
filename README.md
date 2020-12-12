@@ -9,3 +9,8 @@ visual test scripts utilizing their Applitools test products.
 
 Use the following command to run all tests:
 `npm run test`
+
+## Applitools Eyes
+
+Part 1 test result batch
+https://eyes.applitools.com/app/test-results/00000251794504148202/
